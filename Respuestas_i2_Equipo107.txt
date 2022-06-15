@@ -1,6 +1,24 @@
 Maiorano Diego
 
+a-¿Como actualizo mi repositorio, al estado que esté el repo que hice FORK?
+agrego el repositorio original como remoto, hago un fetch a este remoto y traigo los cambios a mi rama
+
+b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
+Si, de la misma manera que la respuesta anterior
+
 c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
 C-No, porque cada modificación es propia
+
 d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar el fork?
 D-Tanto GAMMA como ALFA no perdieron los datos hechos por ellos cuando actualizaron el fork
+
+e- realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por
+orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos.
+Maiorano crea el repo desde github
+Maiorano git pull <direccion-del-repo>
+Maiorano crea el archivo fork.txt, git commit, git push
+Lopez Cane forkea el repo desde github, git pull <direccion-del-repo-forkeado>
+Lopez Cane modifica el archivo, git commit, git push
+Maiorano crea el archivo NuevoDato.txt, git commit, git push
+Lopez Cane git remote add -f upstream <direccion-del-repo-original>
+Lopez Cane git checkout main, git merge upstream/main, git push
